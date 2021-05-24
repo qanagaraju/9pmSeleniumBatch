@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Invoke browser]]>
+    </line>
+    <line>
+      <![CDATA[verify username]]>
+    </line>
+    <line>
+      <![CDATA[verify password]]>
+    </line>
+    <line>
+      <![CDATA[verify login button]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="4758" started-at="2021-05-23T18:42:05 IST" finished-at="2021-05-23T18:42:09 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="4758" started-at="2021-05-23T18:42:05 IST" finished-at="2021-05-23T18:42:09 IST">
+      <class name="com.app.TestCases.LoginTestCase">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.app.TestCases.LoginTestCase@2f686d1f]" name="launchBrowser" is-config="true" duration-ms="3459" started-at="2021-05-23T18:42:05 IST" finished-at="2021-05-23T18:42:08 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Invoke browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifymaventest()[pri:0, instance:com.app.TestCases.LoginTestCase@2f686d1f]" name="verifymaventest" duration-ms="1235" started-at="2021-05-23T18:42:08 IST" finished-at="2021-05-23T18:42:09 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[verify username]]>
+            </line>
+            <line>
+              <![CDATA[verify password]]>
+            </line>
+            <line>
+              <![CDATA[verify login button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifymaventest -->
+        <test-method status="PASS" signature="quitbrowser()[pri:0, instance:com.app.TestCases.LoginTestCase@2f686d1f]" name="quitbrowser" is-config="true" duration-ms="36" started-at="2021-05-23T18:42:09 IST" finished-at="2021-05-23T18:42:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+      </class> <!-- com.app.TestCases.LoginTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
