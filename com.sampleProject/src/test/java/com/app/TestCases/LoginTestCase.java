@@ -66,7 +66,16 @@ public class LoginTestCase {
     	loginbutton.click();
     	System.out.println("Click login button");
     	Reporter.log("verify login button");
+    	report.log(LogStatus.INFO, "click button");
     	
+    	if(loginbutton.isEnabled()) {
+    		loginbutton.click();
+    		report.log(LogStatus.PASS, "step performed");
+    	}
+    	else
+    	{
+    		report.log(LogStatus.FAIL,"Step failed");
+    	}
     	
     	
     	
