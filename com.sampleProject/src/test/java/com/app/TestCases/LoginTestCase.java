@@ -1,21 +1,20 @@
 package com.app.TestCases;
 
-import static org.testng.Assert.assertTrue;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.ITestResult;
+
 import org.testng.Reporter;
-import org.testng.annotations.AfterMethod;
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
+
 import org.testng.annotations.Test;
 
-import com.app.Listeners.ListenersBlog;
+
 import com.app.Utilities.CaptureScreens;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -85,21 +84,12 @@ public class LoginTestCase {
         
     }
     
-    @AfterMethod
-    public void getscreen(ITestResult result) {
-    	
-    	  if(result.getStatus()==ITestResult.FAILURE) {
-    		  
-    		  CaptureScreens.takeScreenShot(driver,result.getName());
-    		  
-    	  }
-    	
-    }
-    
+   
     
     @AfterTest
     public void quitbrowser() {
     	driver.close();
+    	extent.flush();
     	System.out.println("closing driver");
     }
     
